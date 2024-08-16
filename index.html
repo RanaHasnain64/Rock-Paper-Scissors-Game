@@ -40,8 +40,8 @@
         }
 
         .option {
-            height: 12vw;
-            width: 12vw;
+            height: 165px;
+            width: 165px;
             /* background-color: aqua; */
             margin: 20px;
             border-radius: 50%;
@@ -105,6 +105,26 @@
             font-weight: bold;
             border-radius: 30px;
             border: 1px solid white;
+        }
+
+        @media (max-width: 480px) {
+            .option{
+                height: 80px;
+                width: 80px;
+                margin: 10px;
+            }
+            .optionDiv{
+                display: flex;
+                flex-wrap: wrap;
+                /* grid-template-rows: 2, 1fr; */
+                /* width: 100px; */
+            }
+            .userCounter,
+            .computerCounter {
+                margin: 10px;
+                padding: 10px;
+                font-size: 20px;
+            }
         }
 
     </style>
